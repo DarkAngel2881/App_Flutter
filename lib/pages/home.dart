@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:loginpage/pages/user_profile.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -10,6 +11,17 @@ class _HomePageState extends State<HomePage> {
   void backToLogin() {
     setState(() {
       Navigator.pop(context);
+    });
+  }
+
+  void go_userpage() {
+    setState(() {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: ((context) => const UserProfile()),
+        ),
+      );
     });
   }
 
@@ -90,7 +102,7 @@ class _HomePageState extends State<HomePage> {
                   width: 100,
                   height: 100,
                   child: FloatingActionButton(
-                    onPressed: () {},
+                    onPressed: () => go_userpage(),
                     shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(
                         Radius.circular(10),
