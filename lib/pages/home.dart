@@ -42,6 +42,7 @@ class _HomePageState extends State<HomePage> {
                   width: 100,
                   height: 100,
                   child: FloatingActionButton(
+                    heroTag: null,
                     onPressed: () {},
                     shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(
@@ -62,6 +63,7 @@ class _HomePageState extends State<HomePage> {
                   width: 100,
                   height: 100,
                   child: FloatingActionButton(
+                    heroTag: null,
                     onPressed: () {},
                     shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(
@@ -82,6 +84,7 @@ class _HomePageState extends State<HomePage> {
                   width: 100,
                   height: 100,
                   child: FloatingActionButton(
+                    heroTag: null,
                     onPressed: () {},
                     shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(
@@ -102,6 +105,7 @@ class _HomePageState extends State<HomePage> {
                   width: 100,
                   height: 100,
                   child: FloatingActionButton(
+                    heroTag: null,
                     onPressed: () => go_userpage(),
                     shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(
@@ -120,7 +124,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       floatingActionButton:
-          FloatingActionButton(onPressed: () => backToLogin()),
+          FloatingActionButton(heroTag: null, onPressed: () => backToLogin()),
     );
   }
 }

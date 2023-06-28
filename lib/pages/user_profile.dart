@@ -18,6 +18,7 @@ class _UserProfileState extends State<UserProfile> {
     return Scaffold(
       body: const Text('ciao banana dioboioio cane'),
       floatingActionButton: FloatingActionButton(
+        heroTag: null,
         onPressed: () {},
       ),
     );
