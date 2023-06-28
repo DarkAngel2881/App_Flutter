@@ -16,7 +16,7 @@ class _UserProfileState extends State<UserProfile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: const Text('Dio banana'),
+      body: const Text('Viva i bimbi neri'),
       floatingActionButton: FloatingActionButton(
         heroTag: null,
         onPressed: () {},
