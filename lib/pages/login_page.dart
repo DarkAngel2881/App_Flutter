@@ -51,7 +51,7 @@ class _LoginPageState extends State<LoginPage> {
 
             // welcome back
             const Text(
-              'Banane!',
+              'Welcome back! We\'ve been missing you!',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 16,
