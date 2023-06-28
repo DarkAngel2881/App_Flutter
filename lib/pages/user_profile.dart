@@ -19,7 +19,7 @@ class _UserProfileState extends State<UserProfile> {
       body: const Text('Castellano frocissimo'),
       floatingActionButton: FloatingActionButton(
         heroTag: null,
-        onPressed: () {},
+        onPressed: () => backToLogin(),
       ),
     );
   }
