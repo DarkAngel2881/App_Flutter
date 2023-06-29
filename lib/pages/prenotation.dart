@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class UserProfile extends StatefulWidget {
-  const UserProfile({super.key});
+class Prenotation extends StatefulWidget {
+  const Prenotation({super.key});
   @override
-  State<UserProfile> createState() => _UserProfileState();
+  State<Prenotation> createState() => _PrenotationState();
 }
 
-class _UserProfileState extends State<UserProfile> {
+class _PrenotationState extends State<Prenotation> {
   void backToLogin() {
     setState(() {
       Navigator.pop(context);
@@ -18,7 +18,7 @@ class _UserProfileState extends State<UserProfile> {
     return const Scaffold(
       body: Center(
         child: Text(
-          'User profile',
+          'Prenotation Page',
           style: TextStyle(
             fontSize: 25,
             fontWeight: FontWeight.bold,

@@ -14,12 +14,23 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
-  void go_userpage() {
+  void goUserPage() {
     setState(() {
       Navigator.push(
         context,
         MaterialPageRoute(
           builder: ((context) => const UserProfile()),
+        ),
+      );
+    });
+  }
+
+  void goPrenotationPage() {
+    setState(() {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: ((context) => const Prenotation()),
         ),
       );
     });
@@ -64,7 +75,7 @@ class _HomePageState extends State<HomePage> {
                   height: 100,
                   child: FloatingActionButton(
                     heroTag: null,
-                    onPressed: () {},
+                    onPressed: () => goPrenotationPage(),
                     shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(
                         Radius.circular(10),
@@ -106,7 +117,7 @@ class _HomePageState extends State<HomePage> {
                   height: 100,
                   child: FloatingActionButton(
                     heroTag: null,
-                    onPressed: () => go_userpage(),
+                    onPressed: () => goUserPage(),
                     shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(
                         Radius.circular(10),
