@@ -65,22 +65,27 @@ class _IndexState extends State<Index> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.red,
+      // Appbar
       appBar: AppBar(
         title: const Text('Index page (temporary)'),
         automaticallyImplyLeading: false,
       ),
+      // body
       body: Center(
+        // Buttons
         child: SizedBox(
           width: 300,
           height: 300,
           child: Stack(
             children: [
+              // Homepage button tile
               Positioned(
                 top: 0,
                 left: 0,
                 child: SizedBox(
                   width: 100,
                   height: 100,
+                  // Homepage Button
                   child: FloatingActionButton(
                     heroTag: null,
                     onPressed: () => goHomepage(),
@@ -96,12 +101,15 @@ class _IndexState extends State<Index> {
                   ),
                 ),
               ),
+
+              // Prenotation page button tile
               Positioned(
                 top: 0,
                 right: 0,
                 child: SizedBox(
                   width: 100,
                   height: 100,
+                  // Prenotation page button
                   child: FloatingActionButton(
                     heroTag: null,
                     onPressed: () => goPrenotationPage(),
@@ -117,12 +125,15 @@ class _IndexState extends State<Index> {
                   ),
                 ),
               ),
+
+              // Points page button tile
               Positioned(
                 bottom: 0,
                 left: 0,
                 child: SizedBox(
                   width: 100,
                   height: 100,
+                  // Point page button
                   child: FloatingActionButton(
                     heroTag: null,
                     onPressed: () => goPointsPage(),
@@ -138,12 +149,15 @@ class _IndexState extends State<Index> {
                   ),
                 ),
               ),
+
+              // User profile page button tile
               Positioned(
                 bottom: 0,
                 right: 0,
                 child: SizedBox(
                   width: 100,
                   height: 100,
+                  // User profile button
                   child: FloatingActionButton(
                     heroTag: null,
                     onPressed: () => goUserPage(),
@@ -163,6 +177,8 @@ class _IndexState extends State<Index> {
           ),
         ),
       ),
+
+      // Back button
       floatingActionButton:
           FloatingActionButton(heroTag: null, onPressed: () => backToLogin()),
     );
