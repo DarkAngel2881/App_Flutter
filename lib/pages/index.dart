@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:loginpage/pages/points_collection.dart';
+import 'package:loginpage/pages/prenotation.dart';
 import 'package:loginpage/pages/user_profile.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class Index extends StatefulWidget {
+  const Index({super.key});
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<Index> createState() => _IndexState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _IndexState extends State<Index> {
   void backToLogin() {
     setState(() {
       Navigator.pop(context);
@@ -31,6 +33,17 @@ class _HomePageState extends State<HomePage> {
         context,
         MaterialPageRoute(
           builder: ((context) => const Prenotation()),
+        ),
+      );
+    });
+  }
+
+  void goPointsPage() {
+    setState(() {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: ((context) => const PointsPage()),
         ),
       );
     });
@@ -96,7 +109,7 @@ class _HomePageState extends State<HomePage> {
                   height: 100,
                   child: FloatingActionButton(
                     heroTag: null,
-                    onPressed: () {},
+                    onPressed: () => goPointsPage(),
                     shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(
                         Radius.circular(10),
