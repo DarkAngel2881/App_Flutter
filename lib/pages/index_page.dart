@@ -65,6 +65,10 @@ class _IndexState extends State<Index> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.red,
+      appBar: AppBar(
+        title: const Text('Index page (temporary)'),
+        automaticallyImplyLeading: false,
+      ),
       body: Center(
         child: SizedBox(
           width: 300,
