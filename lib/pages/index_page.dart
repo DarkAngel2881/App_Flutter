@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:loginpage/pages/home_page.dart';
 import 'package:loginpage/pages/points_collection.dart';
-import 'package:loginpage/pages/prenotation.dart';
+import 'package:loginpage/pages/prenotation_page.dart';
 import 'package:loginpage/pages/user_profile.dart';
 
 class Index extends StatefulWidget {
@@ -49,6 +50,17 @@ class _IndexState extends State<Index> {
     });
   }
 
+  void goHomepage() {
+    setState(() {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: ((context) => const HomePage()),
+        ),
+      );
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,7 +79,7 @@ class _IndexState extends State<Index> {
                   height: 100,
                   child: FloatingActionButton(
                     heroTag: null,
-                    onPressed: () {},
+                    onPressed: () => goHomepage(),
                     shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(
                         Radius.circular(10),
