@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
     return const Scaffold(
       body: Center(
         child: Text(
-          'Homepage',
+          'Homepage dio bestia',
           style: TextStyle(
             fontSize: 25,
             fontWeight: FontWeight.bold,
