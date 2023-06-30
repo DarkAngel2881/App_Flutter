@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:loginpage/pages/home_page.dart';
-import 'package:loginpage/pages/points_collection.dart';
+import 'package:loginpage/pages/points_page.dart';
 import 'package:loginpage/pages/prenotation_page.dart';
 import 'package:loginpage/pages/user_profile.dart';
 
