@@ -40,11 +40,11 @@ class _LoginPageState extends State<LoginPage> {
           child: Center(
         child: Column(
           children: [
-            const SizedBox(height: 50),
+            const SizedBox(height: 20),
             // logo
             Image.asset(
-              'lib/images/vezlogo.png',
-              height: 130,
+              'lib/images/Vez-Logo.png',
+              height: 160,
             ),
 
             const SizedBox(height: 50),
