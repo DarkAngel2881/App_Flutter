@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'pages/loading_page.dart';
 import 'pages/login_page.dart';
 
 void main() {
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: LoginPage(),
+      home: LoadingPage(),
     );
   }
 }
