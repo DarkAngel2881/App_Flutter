@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:loginpage/pages/home_page.dart';
 import 'package:loginpage/pages/points_page.dart';
 import 'package:loginpage/pages/prenotation_page.dart';
+import 'package:loginpage/pages/splash-animation_page(temp).dart';
 import 'package:loginpage/pages/user_profile.dart';
 
 class Index extends StatefulWidget {
@@ -11,6 +12,17 @@ class Index extends StatefulWidget {
 }
 
 class _IndexState extends State<Index> {
+  void goAnimTestPage() {
+    setState(() {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: ((context) => const SplashAnimationTest()),
+        ),
+      );
+    });
+  }
+
   void backToLogin() {
     setState(() {
       Navigator.pop(context);
@@ -179,8 +191,8 @@ class _IndexState extends State<Index> {
       ),
 
       // Back button
-      floatingActionButton:
-          FloatingActionButton(heroTag: null, onPressed: () => backToLogin()),
+      floatingActionButton: FloatingActionButton(
+          heroTag: null, onPressed: () => goAnimTestPage()),
     );
   }
 }
